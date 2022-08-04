@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar } from "./Navbar";
-import { Jumbotron } from "./Jumbotron"; 
-import { Cardlist } from "./Cardlist"; 
+import { Jumbotron } from "./main"; 
+import { Cardlist } from "./Cards"; 
 import { Footer } from "./Footer"; 
 //include images into your bundle
 
@@ -10,10 +10,16 @@ import { Footer } from "./Footer";
 const Home = () => {
 	return (
 		<div>
-			<Navbar/>
-			<Jumbotron/>
-			<Cardlist/>
+			<header>
+				<Navbar/>
+			</header>
+			<main className="">
+				<Jumbotron/>
+				<Cardlist/>
+			</main>
+			<footer className="footer">
 			<Footer/>
+			</footer>
 		</div>
 	);
 };
